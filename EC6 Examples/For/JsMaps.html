@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Creating a Map from an Array:</p>
+<p id="demo"></p>
+<script>
+// Create a Map named 'fruits' using the Map constructor 
+const fruits = new Map([
+ ["apples", 500],
+ ["bananas", 300],
+ ["oranges", 200]
+]);
+document.getElementById("demo").innerHTML = fruits.get("apples");
+// Setingt the inner HTML of the element with the id 'demo' to get the value related with the key "apples" in the 'fruits' Map
+
+</script>
+</body>
+</html>

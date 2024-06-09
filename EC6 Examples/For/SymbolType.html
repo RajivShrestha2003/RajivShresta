@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Using JavaScript Symbol()</h2>
+<p id="demo"></p>
+<script>
+    // Define an object 'person' with properties
+const person = {
+ firstName: "John",
+ lastName: "Doe",
+ age: 50,
+ eyeColor: "blue"
+};
+// Create a new Symbol 'id' and assign it to a variable
+let id = Symbol('id');
+// Add the Symbol 'id' as a property to the 'person' object
+person[id] = 140353;
+document.getElementById("demo").innerHTML = person[id] + " " + person.id;
+// Set the inner HTML of the element with the id 'demo' to display the value of the Symbol 'id' property and attempt to access person.id, which will be undefined
+</script>
+</body>
+</html>

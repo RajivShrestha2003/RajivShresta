@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Declaring a Variable Using const</h2>
+<p id="demo"></p>
+<script>
+var x = 10;
+// Declaring a variable 'x' with the value 10 using var
+// Here x is 10
+{
+ const x = 2;
+// Declaring a new variable 'x' with the value 2 using const within the block scope
+ // Here x is 2
+}
+// Here x is 10
+document.getElementById("demo").innerHTML = x;
+// Setting the the value of 'x' to inner HTML of the element with  id 'demo' 
+</script>
+</body>
+</html>
